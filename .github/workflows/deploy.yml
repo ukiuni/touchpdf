@@ -35,11 +35,9 @@ jobs:
 
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
-        continue-on-error: true
 
       - name: Run Playwright tests
         run: npx playwright test
-        continue-on-error: true
 
       - name: Prepare Build
         run: |
